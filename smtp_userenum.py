@@ -4,10 +4,6 @@ import socket
 import sys
 import time
 
-
-def print_welcome():
-    print("\r\nWelcome to the SMTP user enumeration super scan\r\n")
-    print("============***c1ph3rm4st3r***=========================")
 ascii_art = '''
                    __                                                          
    _________ ___  / /_____      __  __________  ________  ____  __  ______ ___ 
@@ -18,6 +14,12 @@ ascii_art = '''
               
 
 '''
+
+def print_welcome():
+    print(ascii_art)
+    print("\r\nWelcome to the SMTP user enumeration super scan\r\n")
+    print("============***c1ph3rm4st3r***=========================")
+
 
 def enumerate_smtp(ip_address):
     # Path to the users dictionary file
