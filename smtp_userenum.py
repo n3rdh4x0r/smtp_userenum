@@ -5,8 +5,7 @@ import sys
 import time
 
 def print_welcome():
-    print(ascii_art)
-    print("\r\nWelcome to the SMTP user enumeration super scan\r\n")
+    print ("\r\nWelcome to the SMTP user enumeration super scan\r\n")
     print ('#######################################################################')
     print ('#   c1ph3rm4st3r')
     print ('#######################################################################')
