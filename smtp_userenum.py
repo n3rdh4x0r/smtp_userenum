@@ -7,8 +7,17 @@ import time
 
 def print_welcome():
     print("\r\nWelcome to the SMTP user enumeration super scan\r\n")
-    print("===============================================")
+    print("============***c1ph3rm4st3r***=========================")
+ascii_art = '''
+                   __                                                          
+   _________ ___  / /_____      __  __________  ________  ____  __  ______ ___ 
+  / ___/ __ `__ \/ __/ __ \    / / / / ___/ _ \/ ___/ _ \/ __ \/ / / / __ `__ \
+ (__  ) / / / / / /_/ /_/ /   / /_/ (__  )  __/ /  /  __/ / / / /_/ / / / / / /
+/____/_/ /_/ /_/\__/ .___/____\__,_/____/\___/_/   \___/_/ /_/\__,_/_/ /_/ /_/ 
+                  /_/   /_____/                                                
+              
 
+'''
 
 def enumerate_smtp(ip_address):
     # Path to the users dictionary file
@@ -52,10 +61,14 @@ def enumerate_smtp(ip_address):
     print("\r\nThe program has finished enumerating users.\r\n")
 
 
+def print_usage():
+    print("Usage: python script_name.py <IP_ADDRESS>")
+
+
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python script_name.py <IP_ADDRESS>")
-        sys.exit(1)
+    if len(sys.argv) < 2 or sys.argv[1] in ['-h', '--help']:
+        print_usage()
+        sys.exit(0)
     print_welcome()
     enumerate_smtp(sys.argv[1])
 
