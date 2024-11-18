@@ -6,7 +6,7 @@ import time
 
 def print_welcome():
     print ('#######################################################################')
-    print ("#   Welcome to the SMTP user enumeration super scan - c1ph3rm4st3r     ")
+    print ("#   Welcome to the SMTP user enumeration super scan - n3rdh4x0r        ")
     print ('#######################################################################')
 
 
